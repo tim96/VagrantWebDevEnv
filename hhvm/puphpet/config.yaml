@@ -3,7 +3,7 @@ vagrantfile:
     vm:
         box: puphpet/ubuntu1404-x64
         box_url: puphpet/ubuntu1404-x64
-        hostname: local.puphpet.hhvm
+        hostname: local.puphpet.hhvm.test
         memory: '1024'
         cpus: '1'
         chosen_provider: virtualbox
@@ -327,6 +327,10 @@ hhvm:
         hhvm.server.port: '9000'
         hhvm.log.use_log_file: '1'
         hhvm.log.file: /var/log/hhvm/error.log
+        hhvm.server.default_document: app.php
+        hhvm.repo.central.path: /var/run/hhvm/hhvm.hhbc
+        hhvm.server.fix_path_info: '1'
+        hhvm.libxml.ext_entity_whitelist: file,http
     php_ini:
         display_errors: 'On'
         error_reporting: '-1'
