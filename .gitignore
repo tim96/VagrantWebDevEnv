@@ -3,6 +3,4 @@ www/*
 *.sublime-project
 *.sublime-workspace
 hhvm/.vagrant
-hhvm/test
-hhvm/test1
 hhvm/html
