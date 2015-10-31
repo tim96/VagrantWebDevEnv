@@ -3,5 +3,5 @@ www/*
 *.sublime-project
 *.sublime-workspace
 hhvm/.vagrant
-hhvm/html
 .idea/
+php_mysql_5.6/.vagrant
