@@ -166,6 +166,9 @@ apache:
             serveraliases:
                 - www.test.dev
             docroot: /var/www/test
+            proxy_pass_match:
+                path: '^/(.+\.(hh|php)(/.*)?)$'
+                url: 'fcgi://127.0.0.1:9000/var/www/test/$1'
             port: '80'
             setenv:
                 - 'APP_ENV dev'
@@ -201,6 +204,9 @@ apache:
             serveraliases:
                 - www.test1.dev
             docroot: /var/www/test1
+            proxy_pass_match:
+                path: '^/(.+\.(hh|php)(/.*)?)$'
+                url: 'fcgi://127.0.0.1:9000/var/www/test1/$1'
             port: '80'
             setenv:
                 - 'APP_ENV dev'
