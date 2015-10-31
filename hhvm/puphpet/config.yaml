@@ -4,7 +4,7 @@ vagrantfile:
         box: puphpet/ubuntu1404-x64
         box_url: puphpet/ubuntu1404-x64
         hostname: local.puphpet.hhvm.test
-        memory: '1024'
+        memory: '1536'
         cpus: '1'
         chosen_provider: virtualbox
         network:
@@ -165,10 +165,10 @@ apache:
             servername: test.dev
             serveraliases:
                 - www.test.dev
-            docroot: /var/www/test
+            docroot: /var/www/test/web
             proxy_pass_match:
                 path: '^/(.+\.(hh|php)(/.*)?)$'
-                url: 'fcgi://127.0.0.1:9000/var/www/test/$1'
+                url: 'fcgi://127.0.0.1:9000/var/www/test/web/$1'
             port: '80'
             setenv:
                 - 'APP_ENV dev'
@@ -182,7 +182,7 @@ apache:
             ssl_cipher: ''
             directories:
                 avd_nr98ak60u0lc:
-                    path: /var/www/test
+                    path: /var/www/test/web
                     options:
                         - Indexes
                         - FollowSymlinks
@@ -203,10 +203,10 @@ apache:
             servername: test1.dev
             serveraliases:
                 - www.test1.dev
-            docroot: /var/www/test1
+            docroot: /var/www/test1/web
             proxy_pass_match:
                 path: '^/(.+\.(hh|php)(/.*)?)$'
-                url: 'fcgi://127.0.0.1:9000/var/www/test1/$1'
+                url: 'fcgi://127.0.0.1:9000/var/www/test1/web/$1'
             port: '80'
             setenv:
                 - 'APP_ENV dev'
@@ -220,7 +220,7 @@ apache:
             ssl_cipher: ''
             directories:
                 avd_f5pqxdk16vic:
-                    path: /var/www/test1
+                    path: /var/www/test1/web
                     options:
                         - Indexes
                         - FollowSymlinks
