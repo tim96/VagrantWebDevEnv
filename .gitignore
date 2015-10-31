@@ -4,3 +4,4 @@ www/*
 *.sublime-workspace
 hhvm/.vagrant
 hhvm/html
+.idea/
