@@ -12,26 +12,22 @@
 
     ```$ git clone https://github.com/tim96/VagrantWebDevEnv.git```
     
-* install git submodules
-    ```$ cd VagrantWebDevEnv && git submodule update --init```
+* Using hhvm virtual machine(vm) or
+   ```$ cd hhvm```
+
+* Using php virtual machine(vm)
+   ```$ cd php_mysql+5.6```
 
 * run vagrant (for the first time it should take up to 10-15 min)
     ```$ vagrant up```
-    
-* SSH server is accessible with http://22.22.22.22:22 (IP address can be changed in Vagrantfile)
 
-## Installed components
-
-* [GiT](http://git-scm.com/)
-* [Vim](http://www.vim.org/)
-* [cURL](http://curl.haxx.se/)
-* [Node.js](http://nodejs.org/)
-* [npm](https://npmjs.org/)
-* [OpenJDK](http://openjdk.java.net/)
+* SSH server for hhvm vm is accessible with http://192.168.56.101:22 (IP address can be changed in Vagrantfile)
+* SSH server for php vm is accessible with http://192.168.56.102:22 (IP address can be changed in Vagrantfile)
 
 ## Thanks to
 
-* [irmantas](https://github.com/irmantas/symfony2-vagrant) - for great idea
+* [jtreminio](https://github.com/puphpet/puphpet) - for great idea
 
 ## TODO
-1. Add packages for web development
+1. Update Readme documentation
+2. Add git, npm, curl, openJDK, node.js, mercurial, svn packages
