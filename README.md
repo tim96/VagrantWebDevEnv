@@ -12,10 +12,14 @@
 
     ```$ git clone https://github.com/tim96/VagrantWebDevEnv.git```
     
-* Using hhvm virtual machine(vm) or
+* Using hhvm virtual machine(vm)
+
    ```$ cd hhvm```
 
+OR
+
 * Using php virtual machine(vm)
+
    ```$ cd php_mysql+5.6```
 
 * run vagrant (for the first time it should take up to 10-15 min)
