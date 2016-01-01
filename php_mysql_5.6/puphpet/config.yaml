@@ -4,7 +4,7 @@ vagrantfile:
         box: puphpet/ubuntu1404-x64
         box_url: puphpet/ubuntu1404-x64
         hostname: local.puphpet.php.mysql.56
-        memory: '1024'
+        memory: '1536'
         cpus: '1'
         chosen_provider: virtualbox
         network:
@@ -246,9 +246,11 @@ php:
             - imagick
             - imap
             - ldap
+            - mongo
             - mbstring
             - mysql
             - mysqlnd
+            - redis
             - opcache
             - sqlite
             - xsl
@@ -256,7 +258,9 @@ php:
             - bcmath
             - memcache
         pear: {  }
-        pecl: {  }
+        pecl:
+            - mongo
+            - redis
     ini:
         display_errors: 'On'
         error_reporting: '-1'
@@ -392,7 +396,7 @@ mongodb:
         port: '27017'
     databases: {  }
 redis:
-    install: '0'
+    install: '1'
     settings:
         conf_port: '6379'
 sqlite:
@@ -427,7 +431,7 @@ rabbitmq:
     vhosts: {  }
     plugins: {  }
 elastic_search:
-    install: '0'
+    install: '1'
     settings:
         version: 1.4.1
         java_install: true
