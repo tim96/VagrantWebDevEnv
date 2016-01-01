@@ -28,6 +28,17 @@ OR
 * SSH server for hhvm vm is accessible with http://192.168.56.101:22 (IP address can be changed in Vagrantfile)
 * SSH server for php vm is accessible with http://192.168.56.102:22 (IP address can be changed in Vagrantfile)
 
+## Web Access:
+
+* ip: 192.168.56.101  test.dev  Local folder: hhvm\test\web
+* ip: 192.168.56.101  test1.dev  Local folder: hhvm\test1\web
+* ip: 192.168.56.102  test2.dev  Local folder: php_mysql_5.6\test2\web
+* ip: 192.168.56.102  test3.dev  Local folder: php_mysql_5.6\test3\web
+
+* You can write this ip in hosts file, for example:
+* 192.168.56.102 test2.dev
+* After that you can open browser and write http://test2.dev/index.php and you can see php information.
+
 ## Thanks to
 
 * [jtreminio](https://github.com/puphpet/puphpet) - for great idea
