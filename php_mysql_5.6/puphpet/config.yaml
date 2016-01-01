@@ -76,6 +76,7 @@ server:
         - mercurial
         - git
         - subversion
+        - nmap
 users_groups:
     install: '1'
     groups: {  }

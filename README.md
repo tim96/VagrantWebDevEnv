@@ -54,6 +54,10 @@ Connect via ssh:
 Restart php-fpm service: 
 ```service php-fpm restart``` or ```service php5-fpm restart```
 
+Show open ports to incomming connection from internet
+1. ```nmap 192.168.56.102``` or ```nmap 192.168.56.101```
+2. ```nmap -v -A 192.168.56.102``` or ```nmap -v -A 192.168.56.101```
+
 ## Add new projects
 
 1. Add git submodule
