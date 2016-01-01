@@ -30,14 +30,32 @@ OR
 
 ## Web Access:
 
-* ip: 192.168.56.101  test.dev  Local folder: hhvm\test\web
-* ip: 192.168.56.101  test1.dev  Local folder: hhvm\test1\web
-* ip: 192.168.56.102  test2.dev  Local folder: php_mysql_5.6\test2\web
-* ip: 192.168.56.102  test3.dev  Local folder: php_mysql_5.6\test3\web
+ip: 192.168.56.101  test.dev  Local folder: ```hhvm\test\web```
+ip: 192.168.56.101  test1.dev  Local folder: ```hhvm\test1\web```
+ip: 192.168.56.102  test2.dev  Local folder: ```php_mysql_5.6\test2\web```
+ip: 192.168.56.102  test3.dev  Local folder: ```php_mysql_5.6\test3\web```
 
 * You can write this ip in hosts file, for example:
-* 192.168.56.102 test2.dev
-* After that you can open browser and write http://test2.dev/index.php and you can see php information.
+    ```192.168.56.102 test2.dev```
+	
+After that you can open browser and write http://test2.dev/index.php and you can see information about php.
+
+## Commands
+
+Reload config file for apply changes:
+```vagrant reload --provision```
+
+Shutdown virtual machine
+```vagrant suspend```
+
+Restart php-fpm service
+```service php-fpm restart```
+
+## Add new projects
+
+1) Add git submodule
+2) Create virtual host in ```config.yml```
+3) Apply changes for virtual machine
 
 ## Thanks to
 
