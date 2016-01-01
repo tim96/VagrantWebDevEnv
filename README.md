@@ -20,7 +20,7 @@ OR
 
 * Using php virtual machine(vm)
 
-   ```$ cd php_mysql+5.6```
+   ```$ cd php_mysql_5.6```
 
 * run vagrant (for the first time it should take up to 10-15 min)
     ```$ vagrant up```
@@ -63,7 +63,3 @@ Restart php-fpm service:
 ## Thanks to
 
 * [jtreminio](https://github.com/puphpet/puphpet) - for great idea
-
-## TODO
-1. Update Readme documentation
-2. Add git, npm, curl, openJDK, node.js, mercurial, svn packages
