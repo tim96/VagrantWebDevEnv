@@ -6,7 +6,7 @@
 * Install Vagrant using the [installation instructions](http://docs.vagrantup.com/v2/installation/index.html)
 
 * If you are on Windows OS install NFS support plugin [more information and detailed installation instructions](https://github.com/GM-Alex/vagrant-winnfsd):
-    ```vagrant plugin install vagrant-winnfsd```
+    <br />```vagrant plugin install vagrant-winnfsd```
 
 * Clone this repository
 
@@ -54,15 +54,15 @@ Connect via ssh:
 Restart php-fpm service: 
 ```service php-fpm restart``` or ```service php5-fpm restart```
 
-Show open ports to incomming connection from internet
-1. ```nmap 192.168.56.102``` or ```nmap 192.168.56.101```
-2. ```nmap -v -A 192.168.56.102``` or ```nmap -v -A 192.168.56.101```
+Show open ports to incomming connection from internet<br />
+1. ```nmap 192.168.56.102``` or ```nmap 192.168.56.101```<br />
+2. ```nmap -v -A 192.168.56.102``` or ```nmap -v -A 192.168.56.101```<br />
 
 If you want using mongodb or redis in LAN you need change bind_ip and update firewall rules:<br />
-Default port for mongodb - 270017, redis - 6379<br />
-1. ```sudo iptables -I INPUT -p tcp -m state --state NEW,ESTABLISHED --dport 6379 -j ACCEPT```
-2. ```sudo service ufw stop```
-3. ```sudo service ufw start```
+<small>Default port for mongodb - 270017, redis - 6379</small><br />
+1. ```sudo iptables -I INPUT -p tcp -m state --state NEW,ESTABLISHED --dport 6379 -j ACCEPT```<br />
+2. ```sudo service ufw stop```<br />
+3. ```sudo service ufw start```<br />
 
 ## Add new projects
 
