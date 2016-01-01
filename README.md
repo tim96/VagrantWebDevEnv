@@ -48,8 +48,11 @@ Reload config file for apply changes:
 Shutdown virtual machine: 
 ```vagrant suspend```
 
+Connect via ssh: 
+```vagrant ssh```
+
 Restart php-fpm service: 
-```service php-fpm restart```
+```service php-fpm restart``` or ```service php5-fpm restart```
 
 ## Add new projects
 
