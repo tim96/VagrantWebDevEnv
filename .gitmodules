@@ -1,0 +1,3 @@
+[submodule "php_mysql_5.6/webchat"]
+	path = php_mysql_5.6/webchat
+	url = https://github.com/tim96/webChat
